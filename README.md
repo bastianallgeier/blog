@@ -7,8 +7,9 @@ Add a blog to any Kirby installation in a matter of seconds.
 
 ## Installation
 
-1. Download the Kirby Blog Plugin
-2. Put it in /site/plugins
+- unzip [master.zip](https://github.com/bastianallgeier/blog/archive/master.zip) as folder `site/plugins/blog` or
+- `git submodule add https://github.com/bastianallgeier/blog.git site/plugins/blog` or
+<!-- - `composer require getkirby/blog` -->
 
 ## Create your blog
 
