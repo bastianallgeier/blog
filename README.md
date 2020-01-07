@@ -1,6 +1,9 @@
-# Kirby Blog Plugin
+# Kirby Blog Plugin λ
 
-Add a blog to any Kirby installation in a meter of seconds.
+Add a blog to any Kirby installation in a matter of seconds.
+
+## Disclaimer
+**This plugin is work-in-progress. Don't use it in production yet!**
 
 ## Installation
 
@@ -10,7 +13,14 @@ Add a blog to any Kirby installation in a meter of seconds.
 ## Create your blog
 
 1. Create a new `content/blog` folder and add a `blog.txt`
-2. Start adding your first article to your blog as subfolder with an `article.txt`. Your `article.txt` should have the following fields: `title, date, text`
+2. Start adding your first article to your blog as subfolder with an `article.txt`. 
+```
+Title: Hello world
+----
+Date: 2019-01-07
+----
+Text: This is my first article
+```
 3. Visit `http://yoursite.com/blog` to see your blog come to life
 
 ## Customize your blog
@@ -22,8 +32,8 @@ Every aspect of your blog can be customized through custom snippets, templates, 
 The blog plugin adds the following templates to get you started without any additional work:
 
 ```
-templates/article.php
-templates/blog.php
+/site/templates/article.php
+/site/templates/blog.php
 ```
 
 ### Snippets
@@ -59,7 +69,7 @@ All blog articles are available in an articles collection, which can be overwrit
 
 You can of course use this collection right away in any other template or controller:
 
-```
+```php
 <?= collection('articles')->first()->title() ?>
 ```
 
@@ -75,7 +85,7 @@ The plugin also comes with blueprints for articles and the blog and a section mi
 
 Here's how to use the `articles` section in your site.yml
 
-```
+```yaml
 title: Site
 sections:
     articles:
@@ -105,6 +115,10 @@ return [
     ]
 ];
 ```
+
+## Todos
+
+- [ ] RSS Feed
 
 ## License
 
