@@ -13,7 +13,7 @@ Add a blog to any Kirby installation in a matter of seconds.
 
 ## Create your blog
 
-1. Create a new `content/blog` folder and add a `blog.txt`
+1. Create a new `/content/blog` folder and add a `blog.txt`
 2. Start adding your first article to your blog as subfolder with an `article.txt`. 
 ```
 Title: Hello world
@@ -23,6 +23,8 @@ Date: 2019-01-07
 Text: This is my first article
 ```
 3. Visit `http://yoursite.com/blog` to see your blog come to life
+
+Your blog does not have to stay at `/blog` It can also be any other subfolder of `/content`. It's only important that you use `blog.txt` and `article.txt` for your text files to load the correct templates.
 
 ## Customize your blog
 
